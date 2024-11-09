@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+<style>
+
+
+</style>
+
+</head>
+<body style="display: flex;justify-content: center; align-items: center; margin: 0;">
+    <div class="container" >
+        <p class="styled-text"><span>YAY! It’s BOGO</span></p>
+        <div class="price-box">
+              <div id="firstunit" class="first-unit" onclick="showUnitPrice('firstunit')">
+                <div style="display:flex;">
+                    <input type="radio" name="option" value="unit1" class="radio-btn" >
+                    <div class="unit-name">
+                        <p class="unit-text" ><strong style="font-size:16px;">1 Unit</strong><span class="percent">10% Off</span></p>
+                        <p style="margin-top:0px;margin-bottom:0px;font-size:14px;margin:4px 0px;">Standard Price</p>
+                    </div>
+                    <div style="display:flex;flex-direction:column;margin-left: auto;">
+                        <p class="unit-price-tag"><strong class="unit-price" style="font-size:16px;">$10.00 USD</strong></p>
+                        <p style="margin-top:0px;margin-bottom:0px;font-size:12px;color:#00000066;text-decoration: line-through;">$24.00 USD</p>
+                    </div>
+                </div>
+                <div class="specification-box specification1" >
+                    <div class="size-dropdown">
+                        <label class="size-label" for="size" >Size</label>
+                
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                           
+                            <span style="font-size:12px;">#1</span> 
+                            <select id="dropdown1" name="dropdown1">
+                                <option value="option1">S</option>
+                                <option value="option2">L</option>
+                                <option value="option3">XL</option>
+                            </select>
+                        </div>
+                
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                           
+                            <span style="font-size:12px;">#2</span> 
+                            <select id="dropdown2" name="dropdown2">
+                                <option value="option1">S</option>
+                                <option value="option2">L</option>
+                                <option value="option3">XL</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="color-dropdown" >
+                      
+                        <label class="color-label" for="color" >Color</label>
+                
+                      
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                    
+                            <select id="dropdown1" name="dropdown1" >
+                                <option value="option1">Black</option>
+                                <option value="option2">Red</option>
+                                <option value="option3">Green</option>
+                            </select>
+                        </div>
+                
+                       
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                    
+                            <select id="dropdown2" name="dropdown2">
+                                <option value="option1">Black</option>
+                                <option value="option2">Red</option>
+                                <option value="option3">Green</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                   
+
+
+              </div>
+              <div id="secondunit" class="second-unit" onclick="showUnitPrice('secondunit')" style="border: 2px solid #FF6B82;position:relative;background-color: #FFF9FA;">
+                <p  class="most-popular">Most Polular</p>
+                <div style="display:flex;">
+                    <input type="radio" name="option" value="unit2" class="radio-btn" checked >
+                    <div class="unit-name">
+                        <p class="unit-text"><strong style="font-size:16px;">2 Unit</strong><span class="percent">20% Off</span></p>
+                      
+                    </div>
+                    <div style="display:flex;flex-direction:column;margin-left: auto;">
+                        <p class="unit-price-tag" ><strong class="unit-price" style="font-size:16px;">$18.00 USD</strong></p>
+                        <p style="margin-top:0px;margin-bottom:0px;font-size:12px;color:#00000066;text-decoration: line-through;">$24.00 USD</p>
+                    </div>
+                </div>
+                <div class="specification-box" style="display: flex;padding:0px 26px;">
+                    <div class="size-dropdown" >
+                       
+                        <label  class="size-label" for="size" >Size</label>
+                
+                        
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                           
+                            <span style="font-size:12px;">#1</span> 
+                            <select id="dropdown1" name="dropdown1">
+                                <option value="option1">S</option>
+                                <option value="option2">L</option>
+                                <option value="option3">XL</option>
+                            </select>
+                        </div>
+                
+                       
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                           
+                            <span style="font-size:12px;">#2</span> 
+                            <select id="dropdown2" name="dropdown2">
+                                <option value="option1">S</option>
+                                <option value="option2">L</option>
+                                <option value="option3">XL</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="color-dropdown" >
+                        
+                        <label  class="color-label" for="color" >Color</label>
+                
+                       
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <select id="dropdown1" name="dropdown1" >
+                                <option value="option1">Black</option>
+                                <option value="option2">Red</option>
+                                <option value="option3">Green</option>
+                            </select>
+                        </div>
+                
+                      
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                            <select id="dropdown2" name="dropdown2">
+                                <option value="option1">Black</option>
+                                <option value="option2">Red</option>
+                                <option value="option3">Green</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                   
+
+
+              </div>
+              <div id="thirdunit" class="third-unit" onclick="showUnitPrice('thirdunit')" style="border: 0.9px solid #C8C8C8;">
+                <div style="display:flex;">
+                    <input type="radio" name="option" value="unit3" class="radio-btn" >
+                    <div class="unit-name">
+                        <p class="unit-text"><strong style="font-size:16px;">3 Unit</strong><span class="percent">30% Off</span></p>
+                      
+                    </div>
+                    <div style="display:flex;flex-direction:column;margin-left: auto;">
+                        <p class="unit-price-tag"><strong class="unit-price"style="font-size:16px;">$24.00 USD</strong></p>
+                        <p style="margin-top:0px;margin-bottom:0px;font-size:12px;color: #00000066;text-decoration: line-through;">$24.00 USD</p>
+                    </div>
+                </div>
+                <div class="specification-box specification3" >
+                    <div class="size-dropdown">
+                        
+                        <label class="size-label" for="size" >Size</label>
+                
+                       
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                           
+                            <span style="font-size:12px;">#1</span> 
+                            <select id="dropdown1" name="dropdown1" >
+                                <option value="option1">S</option>
+                                <option value="option2">L</option>
+                                <option value="option3">XL</option>
+                            </select>
+                        </div>
+                
+                       
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                           
+                            <span style="font-size:12px;">#2</span> 
+                            <select id="dropdown2" name="dropdown2">
+                                <option value="option1">S</option>
+                                <option value="option2">L</option>
+                                <option value="option3">XL</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="color-dropdown">
+                        
+                        <label class="color-label" for="color" >Color</label>
+                
+                       
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                 
+                            <select id="dropdown1" name="dropdown1" >
+                                <option value="option1">Black</option>
+                                <option value="option2">Red</option>
+                                <option value="option3">Green</option>
+                            </select>
+                        </div>
+                
+                        
+                        <div style="display: flex; align-items: center; gap: 6px;">
+                 
+                            <select id="dropdown2" name="dropdown2" >
+                                <option value="option1">Black</option>
+                                <option value="option2">Red</option>
+                                <option value="option3">Green</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                   
+
+
+              </div>
+        </div>
+        <div class="free-delivery-box" >
+            <p class="free-text">Free Delivery</p>
+            <p id="priceDisplay" >Total: $18.00 USD</p>
+        </div>
+        <div>
+            <button type="button" class="add-to-cart"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;&nbsp;Add to Cart</button>
+        </div>
+        <div class="powered-div">
+            <p class="powered-by-text">@ Powered by Pumper</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
