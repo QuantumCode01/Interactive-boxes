@@ -176,7 +176,7 @@ width:160px; background-color: #FF6B82;color:white;text-align: center;padding:10
 }
         .radio-btn::after {
         width: 13px !important;
-        height: 14px !important;
+        height: 13px !important;
     }
 }
 @media only screen and (min-width:768px) and (max-width:992px){
