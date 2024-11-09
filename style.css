@@ -87,10 +87,10 @@ transition: border-color 0.1s ease;
 .radio-btn::after {
 content: ''; 
 position: absolute;
-top: 4px;
-left: 4px;
-width: 16px;
-height: 16px;
+top: 5px;
+left: 5px;
+width: 14px;
+height: 14px;
 border-radius: 50%; 
 background-color: transparent; 
 transition: background-color 0.3s ease;
